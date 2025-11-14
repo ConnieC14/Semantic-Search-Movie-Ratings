@@ -9,8 +9,6 @@ ENC_MODEL = "text-embedding-3-small"  # "text-embedding-ada-002"
 EMB_DIM = 512  # dimensions: 1536
 CONV_MAX_HIST = 3  # Length of conversation history to keep track of
 
-# load_dotenv()
-
 # ============================================
 # CONFIGURATION
 # ============================================
@@ -76,7 +74,7 @@ if not check_api_keys():
 
     st.markdown("""
     <div class="api-key-info">
-        <strong>⚠️ API Keys Required</strong><br>
+        <strong>API Keys Required</strong><br>
         This app requires your own API keys to function. Your keys are stored only in your browser session
         and are never saved to any server.
     </div>
@@ -105,9 +103,9 @@ if not check_api_keys():
 
         col1, col2 = st.columns(2)
         with col1:
-            submit = st.form_submit_button("🚀 Start Chatting", use_container_width=True)
+            submit = st.form_submit_button("Start Chatting", use_container_width=True)
         with col2:
-            if st.form_submit_button("📖 How to Get API Keys", use_container_width=True):
+            if st.form_submit_button("How to Get API Keys", use_container_width=True):
                 st.session_state.show_instructions = True
 
         if submit:
@@ -117,7 +115,7 @@ if not check_api_keys():
                 st.session_state.index_name = index_name
                 st.rerun()
             else:
-                st.error("⚠️ Please enter both API keys to continue.")
+                st.error("Please enter both API keys to continue.")
 
     # Show instructions if requested
     if st.session_state.get("show_instructions", False):
@@ -138,7 +136,7 @@ if not check_api_keys():
             5. Create an index named `semantic-search-movie-demo` (or use your own name)
 
             ### Privacy Note
-            🔒 Your API keys are stored only in your browser session and are never sent to any server
+            Your API keys are stored only in your browser session and are never sent to any server
             except OpenAI and Pinecone for processing your requests.
             """)
 
@@ -152,10 +150,6 @@ if not check_api_keys():
 # Initialize APIs (use Streamlit secrets in production)
 @st.cache_resource
 def init_clients(openai_key, pinecone_key, index_name):
-    # openai.api_key = os.getenv("OPENAI_API_KEY")
-    # pc = Pinecone(api_key=os.getenv("PINECONE_API_KEY"))
-    # index = pc.Index("semantic-search-movie-demo")
-    # return index
     try:
         openai.api_key = openai_key
         pc = Pinecone(api_key=pinecone_key)
@@ -165,7 +159,6 @@ def init_clients(openai_key, pinecone_key, index_name):
         return None, str(e)
 
 
-# index = init_clients()
 # Initialize with user-provided keys
 index, error = init_clients(
     st.session_state.openai_api_key,
@@ -174,9 +167,9 @@ index, error = init_clients(
 )
 
 if error:
-    st.error(f"❌ Error connecting to APIs: {error}")
+    st.error(f"Error connecting to APIs: {error}")
     st.info("💡 Please check your API keys in the sidebar and try again.")
-    if st.button("🔄 Reset API Keys"):
+    if st.button("Reset API Keys"):
         del st.session_state.openai_api_key
         del st.session_state.pinecone_api_key
         st.rerun()
