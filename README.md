@@ -3,6 +3,12 @@
 
 This guide will help you set up a Pinecone vector database with MovieLens movie embeddings for semantic search.
 
+## Try the Live App
+
+**[Launch Movie Recommendation Bot →](https://semantic-search-movie-ratings-a5wfzrzgn2kee4atvhgbti.streamlit.app/)**
+
+> **Note:** You'll need to set up your own Pinecone index first (see below) and provide your API keys to use the app.
+
 ## Prerequisites
 
 Before you begin, you'll need:
