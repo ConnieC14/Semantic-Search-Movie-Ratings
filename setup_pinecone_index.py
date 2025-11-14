@@ -277,6 +277,7 @@ def test_index(index, test_queries=None, top_k=5):
                 score = match['score']
                 logging.info(f"  {i}. {title} (Rating: {rating:.1f}, Similarity: {score:.3f})")
 
+            print("")
         except Exception as e:
             logging.error(f"Error testing query '{query}': {e}")
 

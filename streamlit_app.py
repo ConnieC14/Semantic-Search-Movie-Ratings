@@ -415,7 +415,7 @@ with st.sidebar:
         "What are the best sci-fi movies?",
         "Show me romantic comedies",
         "Find movies like Inception",
-        "Best action films from the 90s",
+        "Best action films from the 2000s",
         "What horror movies would you recommend?"
     ]
 
