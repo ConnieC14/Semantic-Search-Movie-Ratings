@@ -1,0 +1,29 @@
+Movie Bot Conversation
+Started: 2025-11-14 00:13:52
+Total Queries: 2
+============================================================
+
+[00:13:52] Bot: Hai! I can assist you in finding relevant movies you might be interested in. Ask me about any genre, actor, or movie you're interested in!
+
+[00:16:06] You: What are the best sci-fi movies?
+
+[00:16:10] Bot: Hey there! Based on your interest in sci-fi, I've got some great recommendations for you. You might really enjoy **Guardians of the Galaxy** (2014) with its perfect blend of humor and action, rated 5.0/5.0. Another fantastic pick is **Alien: Covenant** (2017), which offers a thrilling experience at 4.5/5.0. If you're in the mood for something different, check out **Leviathan** (2014) — it’s also rated 4.5/5.0. Happy watching!
+
+  Search Results:
+    1. The Cloverfield Paradox (2018) ⭐ 3.5
+    2. Guardians of the Galaxy (2014) ⭐ 5.0
+    3. Alien: Covenant (2017) ⭐ 4.5
+    4. Leviathan (2014) ⭐ 4.5
+    5. Valerian and the City of a Thousand Planets (2017) ⭐ 4.0
+
+[00:16:28] You: Find movies like Inception
+
+[00:16:32] Bot: Great choice! If you loved **Inception**, you might enjoy **I Origins** (2014), which delves into deep philosophical themes and is rated 5.0/5.0. Another intriguing pick is **Predestination** (2014) with a fascinating time-travel twist, rated 4.5/5.0. Plus, **About Time** (2013) offers a heartwarming take on time travel that you might find delightful. Happy watching!
+
+  Search Results:
+    1. I Origins (2014) ⭐ 5.0
+    2. Predestination (2014) ⭐ 4.5
+    3. About Time (2013) ⭐ 5.0
+    4. Incredibles 2 (2018) ⭐ 4.5
+    5. Inside Out (2015) ⭐ 5.0
+

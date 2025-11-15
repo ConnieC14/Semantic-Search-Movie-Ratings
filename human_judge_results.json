@@ -1,0 +1,14 @@
+[
+  {
+    "query": "Find science fiction movies with a high rating",
+    "rr": 0.0,
+    "ndcg": 0.0,
+    "hit": 0.0
+  },
+  {
+    "query": "Show me classic horror movies",
+    "rr": 0.1111111111111111,
+    "ndcg": 0.05765255749113895,
+    "hit": 1.0
+  }
+]
