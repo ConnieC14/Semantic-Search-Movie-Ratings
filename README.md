@@ -161,6 +161,7 @@ semantic-search-movie-ratings/
 - [OpenAI Embeddings Guide](https://platform.openai.com/docs/guides/embeddings)
 - [Pinecone Quickstart](https://docs.pinecone.io/docs/quickstart)
 - [MovieLens Dataset Info](https://docs.pinecone.io/guides/data/use-public-pinecone-datasets)
+- [Other Datasets](https://github.com/erikbern/ann-benchmarks?tab=readme)
 
 ## License
 
