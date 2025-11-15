@@ -15,7 +15,7 @@ CONV_MAX_HIST = 3  # Length of conversation history to keep track of
 
 # Set page config
 st.set_page_config(
-    page_title="Movie Recommendation Bot",
+    page_title="Movie Recommendation Chat Agent",
     page_icon="🎬",
     layout="centered",
     menu_items={
@@ -69,7 +69,7 @@ def check_api_keys():
 
 # Show API key input if not configured
 if not check_api_keys():
-    st.title("🎬 Movie Recommendation Bot")
+    st.title("🎬 Movie Recommendation Chat Agent")
     st.markdown("### 🔑 API Configuration Required")
 
     st.markdown("""
@@ -301,7 +301,7 @@ def save_conversation_to_file():
     if len(st.session_state.messages) <= 1:
         return None
 
-    conversation_text = "Movie Bot Conversation\n"
+    conversation_text = "Movie Chat Agent Conversation\n"
     conversation_text += f"Started: {st.session_state.conversation_started.strftime('%Y-%m-%d %H:%M:%S')}\n"
     conversation_text += f"Total Queries: {st.session_state.total_queries}\n"
     conversation_text += "="*60 + "\n\n"
@@ -325,7 +325,7 @@ def save_conversation_to_file():
 
 
 # Header
-st.title("🎬 Movie Recommendation Bot")
+st.title("🎬 Movie Recommendation Chat Agent")
 st.markdown("*Ask me anything about movies and I'll find the best recommendations for you! :)*")
 
 # Sidebar with settings

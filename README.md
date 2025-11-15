@@ -1,7 +1,7 @@
 
-# Pinecone Vector Database Setup
+# Movie Recommendation Chat Agent
 
-This guide will help you set up a Pinecone vector database with MovieLens movie embeddings for semantic search.
+ AI movie recommendation chatbot  integrated with semantic search vecotr database. Ask questions your questions and receive personalized suggestions!
 
 ## Try the Live App
 
