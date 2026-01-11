@@ -1,7 +1,7 @@
 
 # Movie Recommendation Chat Agent
 
- AI movie recommendation chatbot  integrated with semantic search vecotr database. Ask questions your questions and receive personalized suggestions!
+ AI movie recommendation chatbot integrated with semantic search vector database. After setting this up you will be able to ask and receive personalized suggestions for movie recommendations based on query similarity!
 
 ## Try the Live App
 
